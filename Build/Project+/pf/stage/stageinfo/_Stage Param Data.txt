@@ -13,9 +13,9 @@ Battlefield_L.param
 	Battlefield_Melee.tlst
 
 ################
-Battlefield_ML_00.param
+Battlefield_MR_00.param
 
-	STGBATTLEFIELD_ML_DUEL.pac
+	STGBATTLEFIELD_MR_BF_DUEL.pac
 	st_battle_NoShadowRotate.rel
 	Battlefield_64.tlst
 
@@ -107,6 +107,13 @@ Bowser_Castle_L.param
 	st_bowsercastle.rel
 	Bowsers_Castle.tlst
 	SFX / GFX: 0x0053 / 0x0032
+
+################
+Bowser_Castle_MR_00.param
+
+	STGBOWSERCASTLE_MR_BC_DRY.pac
+	st_final.rel
+	Bowsers_Castle.tlst
 
 ################
 Bowser_Castle_R.param
@@ -547,7 +554,7 @@ Dream_Land_L.param
 ################
 Dream_Land_MR_00.param
 
-	STGDREAMLAND_MR_64.pac
+	STGDREAMLAND_MR_DL_64.pac
 	st_dreamland64_ht.rel
 	Dream_Land_64.tlst
 	SFX / GFX: 0x006C / 0x005E
@@ -633,7 +640,7 @@ Final_Destination_ML_01.param
 ################
 Final_Destination_MR_00.param
 
-	STGFINALDESTINATION_MR_RAINBOW.pac
+	STGFINALDESTINATION_MR_FD_RAINBOW.pac
 	st_final.rel
 	Final_Destination.tlst
 	SFX / GFX: 0xFFFF / 0x0033
@@ -851,7 +858,7 @@ Green_Hill_Zone_ML_00.param
 ################
 Green_Hill_Zone_MR_00.param
 
-	STGGREENHILLZONE_MR_PROJECTM.pac
+	STGGREENHILLZONE_MR_GHZ_PROJECTM.pac
 	st_greenhill_ht.rel
 	Green_Hill_Zone.tlst
 	SFX / GFX: 0x0066 / 0x0054
@@ -1089,8 +1096,6 @@ Kongo_Jungle_Z.param
 	st_final.rel
 	Golden_Temple.tlst
 	SFX / GFX: 0x0060 / 0x004E
-	Character overlay enabled: R:41 G:13 B:2 A:255
-	Flags: Flat
 
 ################
 Luigis_Mansion.param
@@ -1236,7 +1241,7 @@ Metal_Cavern_ML_00.param
 ################
 Metal_Cavern_MR_00.param
 
-	STGMETALCAVERN_MR_N64.pac
+	STGMETALCAVERN_MR_MC_N64.pac
 	st_final.rel
 	Metal_Cavern_64.tlst
 
@@ -1711,6 +1716,203 @@ Results.param
 	Results.tlst
 
 ################
+Results_BC.param
+
+	STGRESULT_STGBOWSERCASTLE.pac
+	
+	Results.tlst
+
+################
+Results_BF.param
+
+	STGRESULT_STGBATTLEFIELD.pac
+	
+	Results.tlst
+
+################
+Results_CC.param
+
+	STGRESULT_STGCERESSPACECOLONY.pac
+	
+	Results.tlst
+
+################
+Results_DB.param
+
+	STGRESULT_STGBOWSERCASTLE_MR_BC_DRY.pac
+	
+	Results.tlst
+
+################
+Results_DE.param
+
+	STGRESULT_STGDEADLINE.pac
+	
+	Results.tlst
+
+################
+Results_DF.param
+
+	STGRESULT.pac
+	
+	Results.tlst
+
+################
+Results_DL.param
+
+	STGRESULT_STGDREAMLAND.pac
+	
+	Results.tlst
+
+################
+Results_DP.param
+
+	STGRESULT_STGDISTANTPLANET.pac
+	
+	Results.tlst
+
+################
+Results_DR.param
+
+	STGRESULT_STGDREAMLAND_R_DL_NIGHT.pac
+	
+	Results.tlst
+
+################
+Results_DS.param
+
+	STGRESULT_STGDELFINOSECRET.pac
+	
+	Results.tlst
+
+################
+Results_FD.param
+
+	STGRESULT_STGFINALDESTINATION.pac
+	
+	Results.tlst
+
+################
+Results_FH.param
+
+	STGRESULT_STGFRIGATEHUSK.pac
+	
+	Results.tlst
+
+################
+Results_FO.param
+
+	STGRESULT_STGFOUNTAINOFDREAMS.pac
+	
+	Results.tlst
+	SFX / GFX: 0x006E / 0x0033
+
+################
+Results_FR.param
+
+	STGRESULT_STGFRIGATEHUSK_R_FH_DROWNED.pac
+	
+	Results.tlst
+
+################
+Results_GH.param
+
+	STGRESULT_STGGREENHILLZONE.pac
+	
+	Results.tlst
+
+################
+Results_GT.param
+
+	STGRESULT_STGGOLDENTEMPLE.pac
+	
+	Results.tlst
+
+################
+Results_LM.param
+
+	STGRESULT_STGLUIGISMANSION.pac
+	
+	Results.tlst
+
+################
+Results_MC.param
+
+	STGRESULT_STGMETALCAVERN.pac
+	
+	Results.tlst
+
+################
+Results_PR.param
+
+	STGRESULT_STGPOKEMONSTADIUM_R.pac
+	
+	Results.tlst
+
+################
+Results_PS.param
+
+	STGRESULT_STGPOKEMONSTADIUM.pac
+	
+	Results.tlst
+
+################
+Results_PZ.param
+
+	STGRESULT_STGPOKEMONSTADIUM_Z_ABANDONED.pac
+	
+	Results.tlst
+
+################
+Results_SV.param
+
+	STGRESULT_STGSMASHVILLE.pac
+	
+	Results.tlst
+
+################
+Results_SZ.param
+
+	STGRESULT_STGSKYSANCTUARY.pac
+	
+	Results.tlst
+
+################
+Results_TD.param
+
+	STGRESULT_STGTRAININGROOM_MR_DARK.pac
+	
+	Results.tlst
+
+################
+Results_TR.param
+
+	STGRESULT_STGTRAININGROOM.pac
+	
+	Results.tlst
+
+################
+Results_TT.param
+
+	STGRESULT_STGTEMPLEOFTIME.pac
+	
+	Results.tlst
+
+################
+Results_WL.param
+
+	STGRESULT_STGWARIOLAND.pac
+	
+	Results.tlst
+
+################
+Results_YI.param
+
+	STGRESULT_STGYOSHISISLAND.pac
+	
+	Results.tlst
+
+################
 Rumble_Falls.param
 
 	STGRUMBLEFALLS.pac
@@ -1873,7 +2075,7 @@ Sky_Sanctuary_L.param
 ################
 Sky_Sanctuary_MR_00.param
 
-	STGSKYSANCTUARY_MR_ORIGINAL.pac
+	STGSKYSANCTUARY_MR_SSZ_ORIGINAL.pac
 	st_palutena.rel
 	Sky_Sanctuary.tlst
 
