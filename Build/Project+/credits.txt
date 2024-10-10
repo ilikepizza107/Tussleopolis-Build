@@ -17,6 +17,7 @@ SKINS
 ################
 
 MARIO
+07 - LoyaL Mario by ilikepizza107
 
 DONKEY KONG
 
