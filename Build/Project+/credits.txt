@@ -32,6 +32,7 @@ YOSHI
 40 - Shiny Zubat Yoshi by SJS
 
 KIRBY
+25 - influenza Kirby by influenza
 40 - Star Red Kirby by influenza, ilikepizza107
 41 - Star Blue Kirby by influenza, ilikepizza107
 42 - Star Green Kirby by influenza, ilikepizza107
@@ -47,6 +48,7 @@ PIKACHU
 LUIGI
 
 CAPTAIN FALCON
+07 - influenza Falcon by influenza
 35 - ORLY Falcon by Wyld
 36 - Stude Falcon by Motobug
 37 - SoulOfficer Falcon by influenza
@@ -121,8 +123,10 @@ DEDEDE
 11 - Apollo Ali D3 by FingerStripes
 
 LUCARIO
+25 - influenza Lucario by influenza
 
 IKE
+24 - influenza Ike by influenza
 34 - Blitz Ike by erg
 
 R.O.B.
@@ -141,6 +145,7 @@ WOLF
 
 SNAKE
 06 - Autumn Snake by Autumn
+25 - influenza Snake by influenza
 40 - SoulOfficer Snake by ilikepizza107, with credit to Autumn
 
 SONIC
