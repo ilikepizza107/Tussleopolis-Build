@@ -784,7 +784,7 @@ DoNotSaveASL:
 StageResults:
 	%loadByte(r6, 0x9017F42D)	# Load previous stage ID
 	
-	cmpwi r6, 0x01; li r5, 0x4246; beq StoreString	# Battlefield (BF)
+	cmpwi r6, 0x01; beq Battlefield_Results			# Battlefield (BF)
 	cmpwi r6, 0x02; li r5, 0x4644; beq StoreString	# Final Destination (FD)
 	cmpwi r6, 0x03; li r5, 0x4453; beq StoreString	# Delfino Secret (DS)
 	cmpwi r6, 0x04; li r5, 0x4C4D; beq StoreString	# Luigi's Mansion (LM)
@@ -796,7 +796,7 @@ StageResults:
 	cmpwi r6, 0x1C; li r5, 0x574C; beq StoreString	# Wario Land (WL)
 	cmpwi r6, 0x1D; li r5, 0x4450; beq StoreString	# Distant Planete (DP)
 	cmpwi r6, 0x1F; li r5, 0x464F; beq StoreString	# Fountain of Dreams (FO)
-	cmpwi r6, 0x21; li r5, 0x5356; beq StoreString	# Smashville (SV)
+	cmpwi r6, 0x21; beq Smashville_Results			# Smashville (SV)
 	cmpwi r6, 0x23; li r5, 0x4748; beq StoreString	# Green Hill Zone (GH)
 	cmpwi r6, 0x2D; beq Dream_Land_Results			# Dream Land (DL)
 	cmpwi r6, 0x2E; beq PS2_Results					# Pokemon Stadium 2 (PS)
@@ -807,22 +807,48 @@ StageResults:
 	cmpwi r6, 0x49; li r5, 0x4343; beq StoreString	# Ceres Space Colony (CC)
 	bne Default										# If nothing found, go to Default	
 
-Bowser_Results:
-	li r5, 0x4243			# Use "BC"
+Battlefield_Results:
+	li r5, 0x4246			# Use "BF"
 	%lwi(r12, 0x8053EFBA)   # Get ASL ID
 	lhz r12, 0(r12)
-	andi. r12, r12, 0x4000	# Check if Dry Bowser's Castle was selected
+	andi. r12, r12, 0x0020	# Check if R alt was selected
 	beq StoreString			#
-	li r5, 0x4442			# If so, use "DB"
+	li r5, 0x4252			# If so, use "BR"
+	b StoreString
+
+Bowser_Results:
+	li r5, 0x4442			# Use "DB"
+	%lwi(r12, 0x8053EFBA)   # Get ASL ID
+	lhz r12, 0(r12)
+	andi. r12, r12, 0x0020	# Check if R alt was selected
+	beq StoreString			#
+	li r5, 0x4243			# If so, use "BC"
 	b StoreString
 
 Frigate_Results:
-	li r5, 0x4648			# Use "FH"
+	li r5, 0x484D			# Use "HM"
 	%lwi(r12, 0x8053EFBA)   # Get ASL ID
 	lhz r12, 0(r12)
+	mr r11, r12				# preserve r12 in case a different alt was used
 	andi. r12, r12, 0x0020	# Check if R alt was used
+	beq Frigate_L_Alt		#
+	li r5, 0x4648			# If so, use "FH"
+	b StoreString
+
+Frigate_L_Alt:
+	mr r12, r11				# restore what r12 was
+	andi. r12, r12, 0x0040	# Check if L alt was used
 	beq StoreString			#
 	li r5, 0x4652			# If so, use "FR"
+	b StoreString
+
+Smashville_Results:
+	li r5, 0x5356			# Use "SV"
+	%lwi(r12, 0x8053EFBA)   # Get ASL ID
+	lhz r12, 0(r12)
+	andi. r12, r12, 0x0020	# Check if R alt was selected
+	beq StoreString			#
+	li r5, 0x5352			# If so, use "SR"
 	b StoreString
 
 Dream_Land_Results:
