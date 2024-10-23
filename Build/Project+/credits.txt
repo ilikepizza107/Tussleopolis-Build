@@ -163,10 +163,17 @@ STAGES
 ########################
 
 BATTLEFIELD
-Base - Daytime BF by ilikepizza107
+Base - Mo8 BF by ilikepizza107
+R - Daytime BF by ilikepizza107
+
+DREAM LAND
+Base - Mo8 DL by ilikepizza107
 
 POKEMON STADIUM 2
 Base - Tussleopolis PS2 by ilikepizza107
+
+SMASHVILLE
+Base - Mo8 SV by ilikepizza107
 
 ################
 MENUS

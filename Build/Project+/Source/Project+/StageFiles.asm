@@ -790,7 +790,7 @@ StageResults:
 	cmpwi r6, 0x04; li r5, 0x4C4D; beq StoreString	# Luigi's Mansion (LM)
 	cmpwi r6, 0x05; li r5, 0x4D43; beq StoreString	# Metal Cavern (MC)
 	cmpwi r6, 0x06; beq Bowser_Results				# Bowser's Castle (BC)
-	cmpwi r6, 0x09; li r5, 0x5454; beq StoreString	# Temple of Time (TT)
+	cmpwi r6, 0x09; beq Temple_of_Time_Results		# Temple of Time (TT)
 	cmpwi r6, 0x0C; beq Frigate_Results				# Frigate Husk (FH)
 	cmpwi r6, 0x0D; li r5, 0x5949; beq StoreString	# Yoshi's Island (YI)
 	cmpwi r6, 0x1C; li r5, 0x574C; beq StoreString	# Wario Land (WL)
@@ -823,6 +823,15 @@ Bowser_Results:
 	andi. r12, r12, 0x0020	# Check if R alt was selected
 	beq StoreString			#
 	li r5, 0x4243			# If so, use "BC"
+	b StoreString
+
+Temple_of_Time_Results:
+	li r5, 0x544F			# Use "TO"
+	%lwi(r12, 0x8053EFBA)   # Get ASL ID
+	lhz r12, 0(r12)
+	andi. r12, r12, 0x0020	# Check if R alt was selected
+	beq StoreString			#
+	li r5, 0x5454			# If so, use "TT"
 	b StoreString
 
 Frigate_Results:
