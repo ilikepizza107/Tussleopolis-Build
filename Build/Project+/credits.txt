@@ -2,7 +2,7 @@
 PSA
 ################
 
-PSA edits for SipMastah Sonic trails by ilikepizza107
+PSA edits for SipMastah & DHS7 Sonic trails by ilikepizza107
  -PSA Edited: Sub Routine 0x2E5AC
 
 PSA edits for Shrug Toon Link by ilikepizza107
@@ -105,6 +105,7 @@ LUCAS
 41 - Star Blue Lucas by Star, SJS
 42 - Star Green Lucas by Star, SJS
 45 - Blue Pajama Lucas by Toti
+46 - Claus Pajama Lucas by Toti
 
 DIDDY KONG
 25 - SipMastah Diddy Kong by GKO
@@ -149,7 +150,8 @@ SNAKE
 40 - SoulOfficer Snake by ilikepizza107, with credit to Autumn
 
 SONIC
-25 - SipMastah Sonic by Motobug
+25 - SipMastah Sonic v2 by ilikpizza107
+45 - DHS7 Sonic by DHS7
 
 WARIO MAN
 
