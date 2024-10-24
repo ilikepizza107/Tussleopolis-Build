@@ -54,13 +54,12 @@ Z: Metal_Cavern_Z.param
 
 
 ################
-06.asl - 6 entries
+06.asl - 5 entries
 
 Base: Bowser_Castle.param
 R: Bowser_Castle_R.param
 L: Bowser_Castle_L.param
 Z: Bowser_Castle_Z.param
-0x4000: Bowser_Castle_MR_00.param
 Up+Down+Right+Left: Bowser_Castle_DPAD.param
 
 
