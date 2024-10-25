@@ -8,7 +8,7 @@ Battlefield.param
 ################
 Battlefield_DPAD.param
 
-	STGBATTLEFIELD.pac
+	STGBATTLEFIELD_R_BF_DEFAULT.pac
 	st_battle.rel
 	Battlefield_DPAD.tlst
 
@@ -29,8 +29,8 @@ Battlefield_MR_00.param
 ################
 Battlefield_R.param
 
-	STGBATTLEFIELD_R_BF_LUNAR.pac
-	st_battle_NoShadowRotate.rel
+	STGBATTLEFIELD_R_BF_DEFAULT.pac
+	st_battle.rel
 	Battlefield.tlst
 
 ################
@@ -103,7 +103,7 @@ Big_Blue_Z.param
 ################
 Bowser_Castle.param
 
-	STGBOWSERCASTLE.pac
+	STGBOWSERCASTLE_R_BC_DRY.pac
 	st_final.rel
 	Bowsers_Castle.tlst
 
@@ -123,16 +123,9 @@ Bowser_Castle_L.param
 	SFX / GFX: 0x0053 / 0x0032
 
 ################
-Bowser_Castle_MR_00.param
-
-	STGBOWSERCASTLE_MR_BC_DRY.pac
-	st_final.rel
-	Bowsers_Castle.tlst
-
-################
 Bowser_Castle_R.param
 
-	STGBOWSERCASTLE_R_BC_CLASSIC.pac
+	STGBOWSERCASTLE.pac
 	st_final.rel
 	Bowsers_Castle.tlst
 
@@ -567,7 +560,7 @@ Dream_Land.param
 ################
 Dream_Land_DPAD.param
 
-	STGDREAMLAND.pac
+	STGDREAMLAND_R_DL_DEFAULT.pac
 	st_dreamland64_ht.rel
 	Dream_Land_DPAD.tlst
 	SFX / GFX: 0x006C / 0x005E
@@ -575,7 +568,7 @@ Dream_Land_DPAD.param
 ################
 Dream_Land_DPADUP.param
 
-	STGDREAMLAND.pac
+	STGDREAMLAND_R_DL_DEFAULT.pac
 	st_dreamland64_ht.rel
 	Dream_Land_DPADUP.tlst
 	SFX / GFX: 0x006C / 0x005E
@@ -599,7 +592,7 @@ Dream_Land_MR_00.param
 ################
 Dream_Land_R.param
 
-	STGDREAMLAND_R_DL_NIGHT.pac
+	STGDREAMLAND_R_DL_DEFAULT.pac
 	st_dreamland64_ht.rel
 	Dream_Land.tlst
 	SFX / GFX: 0x006C / 0x005E
@@ -810,10 +803,9 @@ Fourside_Z.param
 ################
 Frigate_Husk.param
 
-	STGFRIGATEHUSK.pac
+	STGFRIGATEHUSK_L_FH_HYRULE.pac
 	st_final.rel
 	Frigate_Orpheon.tlst
-	SFX / GFX: 0x0056 / 0x0032
 
 ################
 Frigate_Husk_DPAD.param
@@ -826,10 +818,10 @@ Frigate_Husk_DPAD.param
 ################
 Frigate_Husk_L.param
 
-	STGFRIGATEHUSK_L_PHENDRANA.pac
-	st_battle.rel
-	Phendrana.tlst
-	SFX / GFX: 0x0056 / 0x0032
+	STGFRIGATEHUSK_R_FH_DROWNED.pac
+	st_final.rel
+	Frigate_Orpheon.tlst
+	SFX / GFX: 0x013D / 0x005E
 
 ################
 Frigate_Husk_ML_00.param
@@ -842,10 +834,9 @@ Frigate_Husk_ML_00.param
 ################
 Frigate_Husk_R.param
 
-	STGFRIGATEHUSK_R_FH_DROWNED.pac
+	STGFRIGATEHUSK.pac
 	st_final.rel
 	Frigate_Orpheon.tlst
-	SFX / GFX: 0x013D / 0x005E
 
 ################
 Frigate_Husk_Z.param
@@ -1636,7 +1627,7 @@ Pokemon_Stadium_2.param
 ################
 Pokemon_Stadium_2_DPAD.param
 
-	STGPOKEMONSTADIUM.pac
+	STGPOKEMONSTADIUM_R_DEFAULT.pac
 	st_stadium_static.rel
 	Pokemon_Stadium_2_DPAD.tlst
 	SFX / GFX: 0x0059 / 0x0045
@@ -1661,10 +1652,11 @@ Pokemon_Stadium_2_ML_00.param
 ################
 Pokemon_Stadium_2_R.param
 
-	STGPOKEMONSTADIUM_R_RADIANT.pac
+	STGPOKEMONSTADIUM_R_DEFAULT.pac
 	st_stadium_static.rel
 	Pokemon_Stadium_2.tlst
 	SFX / GFX: 0x0059 / 0x0045
+	MemoryAllocation: 0x209767 (2135911 bytes)
 
 ################
 Pokemon_Stadium_2_Z.param
@@ -1808,6 +1800,13 @@ Results_BF.param
 	Results.tlst
 
 ################
+Results_BR.param
+
+	STGRESULT_STGBATTLEFIELD_R.pac
+	
+	Results.tlst
+
+################
 Results_CC.param
 
 	STGRESULT_STGCERESSPACECOLONY.pac
@@ -1852,7 +1851,7 @@ Results_DP.param
 ################
 Results_DR.param
 
-	STGRESULT_STGDREAMLAND_R_DL_NIGHT.pac
+	STGRESULT_STGDREAMLAND_R.pac
 	
 	Results.tlst
 
@@ -1907,6 +1906,13 @@ Results_GT.param
 	Results.tlst
 
 ################
+Results_HM.param
+
+	STGRESULT_STGHYRULEMEADOWS.pac
+	
+	Results.tlst
+
+################
 Results_LM.param
 
 	STGRESULT_STGLUIGISMANSION.pac
@@ -1942,6 +1948,13 @@ Results_PZ.param
 	Results.tlst
 
 ################
+Results_SR.param
+
+	STGRESULT_STGSMASHVILLE_R.pac
+	
+	Results.tlst
+
+################
 Results_SV.param
 
 	STGRESULT_STGSMASHVILLE.pac
@@ -1959,6 +1972,13 @@ Results_SZ.param
 Results_TD.param
 
 	STGRESULT_STGTRAININGROOM_MR_DARK.pac
+	
+	Results.tlst
+
+################
+Results_TO.param
+
+	STGRESULT_STGTEMPLEOFTIME_R_TOT_OOT.pac
 	
 	Results.tlst
 
@@ -2193,14 +2213,14 @@ Smashville.param
 Smashville_DPAD.param
 
 	[Substages / Normal]
-	- STGSMASHVILLE_00_MORNING.pac
-	- STGSMASHVILLE_01_NOON.pac
-	- STGSMASHVILLE_02_DUSK.pac
-	- STGSMASHVILLE_03_NIGHT.pac
-	- STGSMASHVILLE_03_NIGHT.pac
-	- STGSMASHVILLE_03_NIGHT.pac
-	- STGSMASHVILLE_04_MIDNIGHT.pac
-	- STGSMASHVILLE_04_MIDNIGHT.pac
+	- STGSMASHVILLE_R_DEFAULT_00_MORNING.pac
+	- STGSMASHVILLE_R_DEFAULT_01_NOON.pac
+	- STGSMASHVILLE_R_DEFAULT_02_DUSK.pac
+	- STGSMASHVILLE_R_DEFAULT_03_NIGHT.pac
+	- STGSMASHVILLE_R_DEFAULT_03_NIGHT.pac
+	- STGSMASHVILLE_R_DEFAULT_03_NIGHT.pac
+	- STGSMASHVILLE_R_DEFAULT_04_MIDNIGHT.pac
+	- STGSMASHVILLE_R_DEFAULT_04_MIDNIGHT.pac
 
 	st_smashville_ht.rel
 	Smashville_DPAD.tlst
@@ -2218,10 +2238,20 @@ Smashville_L.param
 ################
 Smashville_R.param
 
-	STGSMASHVILLE_R_SV_BEACH.pac
+	[Substages / Normal]
+	- STGSMASHVILLE_R_DEFAULT_00_MORNING.pac
+	- STGSMASHVILLE_R_DEFAULT_01_NOON.pac
+	- STGSMASHVILLE_R_DEFAULT_02_DUSK.pac
+	- STGSMASHVILLE_R_DEFAULT_03_NIGHT.pac
+	- STGSMASHVILLE_R_DEFAULT_03_NIGHT.pac
+	- STGSMASHVILLE_R_DEFAULT_03_NIGHT.pac
+	- STGSMASHVILLE_R_DEFAULT_04_MIDNIGHT.pac
+	- STGSMASHVILLE_R_DEFAULT_04_MIDNIGHT.pac
+
 	st_smashville_ht.rel
-	Smashville_Tropical.tlst
+	Smashville.tlst
 	SFX / GFX: 0x0064 / 0x0032
+	Flags: OldSubstage
 
 ################
 Smashville_Y.param
@@ -2253,7 +2283,16 @@ Smashville_YL.param
 ################
 Smashville_YR.param
 
-	STGSMASHVILLE_R_SV_BEACH.pac
+	[Substages / Normal]
+	- STGSMASHVILLE_R_DEFAULT_00_MORNING.pac
+	- STGSMASHVILLE_R_DEFAULT_01_NOON.pac
+	- STGSMASHVILLE_R_DEFAULT_02_DUSK.pac
+	- STGSMASHVILLE_R_DEFAULT_03_NIGHT.pac
+	- STGSMASHVILLE_R_DEFAULT_03_NIGHT.pac
+	- STGSMASHVILLE_R_DEFAULT_03_NIGHT.pac
+	- STGSMASHVILLE_R_DEFAULT_04_MIDNIGHT.pac
+	- STGSMASHVILLE_R_DEFAULT_04_MIDNIGHT.pac
+
 	st_smashville_ht.rel
 	Smashville_Concert.tlst
 	SFX / GFX: 0x0064 / 0x0032
@@ -2367,9 +2406,10 @@ Temple_L.param
 ################
 Temple_of_Time.param
 
-	STGTEMPLEOFTIME.pac
-	st_final.rel
+	STGTEMPLEOFTIME_R_TOT_OOT.pac
+	st_templeoftime.rel
 	Temple_of_Time.tlst
+	SFX / GFX: 0x005F / 0x0032
 
 ################
 Temple_of_Time_DPAD.param
@@ -2396,10 +2436,9 @@ Temple_of_Time_ML_00.param
 ################
 Temple_of_Time_R.param
 
-	STGTEMPLEOFTIME_R_TOT_OOT.pac
-	st_templeoftime.rel
-	Temple_of_Time_OoT.tlst
-	SFX / GFX: 0x005F / 0x0032
+	STGTEMPLEOFTIME.pac
+	st_final.rel
+	Temple_of_Time.tlst
 
 ################
 Temple_of_Time_Z.param
