@@ -155,6 +155,7 @@ WOLF
 
 SNAKE
 06 - Autumn Snake by Autumn
+07 - MVZY Snake by Wyld
 25 - influenza Snake by influenza
 40 - SoulOfficer Snake by ilikepizza107, with credit to Autumn
 
