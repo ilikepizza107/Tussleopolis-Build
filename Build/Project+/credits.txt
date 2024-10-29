@@ -2,7 +2,7 @@
 PSA
 ################
 
-PSA edits for SipMastah & DHS7 Sonic trails by ilikepizza107
+PSA edits for SipMastah, Wyld, & DHS7 Sonic trails by ilikepizza107
  -PSA Edited: Sub Routine 0x2E5AC
 
 PSA edits for Shrug Toon Link by ilikepizza107
@@ -161,6 +161,7 @@ SNAKE
 
 SONIC
 25 - SipMastah Sonic v2 by ilikpizza107
+40 - 
 45 - DHS7 Sonic by DHS7
 
 WARIO MAN
