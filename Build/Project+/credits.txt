@@ -177,8 +177,7 @@ STAGES
 ########################
 
 BATTLEFIELD
-Base - Mo8 BF by ilikepizza107
-R - Daytime BF by ilikepizza107
+Base - Daytime BF by ilikepizza107
 
 DREAM LAND
 Base - Mo8 DL by ilikepizza107
