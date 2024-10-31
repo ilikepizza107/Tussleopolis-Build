@@ -784,7 +784,7 @@ DoNotSaveASL:
 StageResults:
 	%loadByte(r6, 0x9017F42D)	# Load previous stage ID
 	
-	cmpwi r6, 0x01; beq Battlefield_Results			# Battlefield (BF)
+	cmpwi r6, 0x01; li r5, 0x4246; beq StoreString	# Battlefield (BF)
 	cmpwi r6, 0x02; li r5, 0x4644; beq StoreString	# Final Destination (FD)
 	cmpwi r6, 0x03; li r5, 0x4453; beq StoreString	# Delfino Secret (DS)
 	cmpwi r6, 0x04; li r5, 0x4C4D; beq StoreString	# Luigi's Mansion (LM)
@@ -806,15 +806,6 @@ StageResults:
     cmpwi r6, 0x47; li r5, 0x4754; beq StoreString  # Golden Temple (GT)
 	cmpwi r6, 0x49; li r5, 0x4343; beq StoreString	# Ceres Space Colony (CC)
 	bne Default										# If nothing found, go to Default	
-
-Battlefield_Results:
-	li r5, 0x4246			# Use "BF"
-	%lwi(r12, 0x8053EFBA)   # Get ASL ID
-	lhz r12, 0(r12)
-	andi. r12, r12, 0x0020	# Check if R alt was selected
-	beq StoreString			#
-	li r5, 0x4252			# If so, use "BR"
-	b StoreString
 
 Bowser_Results:
 	li r5, 0x4442			# Use "DB"
