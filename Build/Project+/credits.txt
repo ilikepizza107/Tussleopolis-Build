@@ -131,6 +131,7 @@ IVYSAUR
 
 DEDEDE
 11 - Apollo Ali D3 by FingerStripes
+12 - Ripple D3 by ???
 
 LUCARIO
 25 - influenza Lucario by influenza
@@ -176,8 +177,7 @@ STAGES
 ########################
 
 BATTLEFIELD
-Base - Mo8 BF by ilikepizza107
-R - Daytime BF by ilikepizza107
+Base - Daytime BF by ilikepizza107
 
 DREAM LAND
 Base - Mo8 DL by ilikepizza107
